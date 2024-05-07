@@ -1,0 +1,226 @@
+/* Guilherme Ricardo de Paiva    n8    30/04 */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(72, 61, 139);
+    padding: 12px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+#logo_senai {
+    height: 40px;
+}
+
+header a {
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover {
+    color: red;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0px 24px;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(209, 222, 235);
+    min-height: calc(100vh - 64px);
+    padding-top: 64px;
+}
+
+/* Página: LOGIN */
+#main-login {
+    background-color: rgb(72, 61, 139);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0;
+}
+
+#main-login div {
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px rgba(56, 42, 42, 0.1) solid;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+#main-login h1 {
+    text-transform: uppercase;
+    color:white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main-login img {
+    height: 80px;
+}
+
+#main-login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-login label {
+    color: white;
+}
+
+#main-login input {
+    margin: 4px;
+    padding: 4px;
+    width: 90%;
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 4px;
+    margin-bottom: 12px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#main-login input:focus {
+    outline: none;
+    background-color: white;
+}
+
+#main-login #botao-enviar {
+    width: 25%;
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 0px ;
+    border-radius: 4px;
+}
+
+#main-login #botao-enviar:hover {
+    background-color: rgb(72, 61, 139, 0.5);
+    box-shadow: 1px 1px 2px;
+}
+
+#main-login a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Página: TAREFAS */
+#main-tarefas {
+    padding-bottom: 40px;
+}
+
+#main-tarefas h1 {
+    margin: 30px;
+    font-size: 50px;
+}
+#main-tarefas img {
+    margin-bottom: 30px;
+    height: 120px;
+}
+
+#main-tarefas section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px calc(100vw / 9);
+}
+
+#main-tarefas .tarefa {
+    width: 250px;
+    height: 170px;
+    background-color: rgb(240, 226, 148);
+    box-shadow: 2px 2px 4px rgb(83, 83, 83);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tarefa p {
+    margin: 6px 0;
+}
+
+#main-tarefas ul {
+    list-style: none;
+}
+
+/* Página: PERFIL */
+#main-perfil section {
+    margin-top: 40px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#main-perfil p, #main-perfil h2 {
+    margin: 10px 0;
+}
+
+#main-perfil div {
+    display: flex;
+    align-items: center;
+}
+
+#main-perfil .img-xperience {
+    height: 120px;
+}
+
+#img-icone {
+    height: 200px;
+}
+
+/* Página: GALERIA */
+#main-galeria section {
+    margin-top: 40px;
+    padding: 24px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#main-galeria h2 {
+    margin: 24px;
+}
+
+#main-galeria .img-xperience {
+    height: 120px;
+}
+
+#main-galeria div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+#main-galeria div img {
+    width: 250px;
+    height: 120px;
+    border-radius: 4px;
+}
